@@ -25,4 +25,4 @@ server.register([Inert], (err) => { // We register extra modules like inert here
   server.route(routes); // Plug the routes we imported earlier into the server
 });
 
-module.exports = server; 
+module.exports = server;

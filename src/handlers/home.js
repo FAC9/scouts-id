@@ -1,7 +1,5 @@
 const homeHandler = (request, reply) => {
-  return reply(
-    `<h1>Hello world</h1><a href="static.html">go to a static page</a>`
-  );
+  return reply.file("home.html");
 };
 
 const homeRoute = {
