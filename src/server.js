@@ -11,9 +11,8 @@ var fs = require('fs');
 
 var tls = {
   key: fs.readFileSync(Path.join(__dirname, '/keys/key.pem')),
-  cert: fs.readFileSync(Path.join(__dirname,'/keys/cert.pem'))
+  cert: fs.readFileSync(Path.join(__dirname, '/keys/cert.pem'))
 };
-
 
 server.connection({
   port: process.env.PORT || 8000,

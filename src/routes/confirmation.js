@@ -26,10 +26,17 @@ const confirmationHandler = (request, reply) => {
   const promise = yotiClient.getActivityDetails(token);
   promise.then((activityDetails) => {
     const userId = activityDetails.getUserId();
+    const profile = activityDetails.getUserProfile();
     if (users[userId].status === true) {
-      reply('they are a good scout');
+      reply(`
+        <h1>a good scout</h1>
+        <img src=${profile.selfie}></img>
+        `);
     } else {
-      reply('not a good scout');
+      reply(`
+        <h1>not a good scout</h1>
+        <img src=${profile.selfie}></img>
+        `);
     }
   });
 };
