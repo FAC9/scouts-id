@@ -10,14 +10,18 @@ const users = {
   'fAUhmIxQAMxKd7pQ0mACongkiz3OpS1oqLfHpamEN7QT0CCuBy4DCsgzpUn9g87G': {
     name: 'John Whiles',
     status: true
+  },
+  'pChUdc2kq71VAEpKindWj1/ef6G3C+ih/8kr3Y0/JBMbHFiGhhYO/6FqUdjZXquN': {
+    name: 'Steve Hopkinson',
+    status: false
   }
-}
+};
 
 const confirmationHandler = (request, reply) => {
   const token = request.query.token;
-  if(!token) {
-    reply("no token!")
-    return
+  if (!token) {
+    reply('no token!');
+    return;
   }
   const promise = yotiClient.getActivityDetails(token);
   promise.then((activityDetails) => {
@@ -27,7 +31,7 @@ const confirmationHandler = (request, reply) => {
     } else {
       reply('not a good scout');
     }
-  })
+  });
 };
 
 const confirmationRoute = {
