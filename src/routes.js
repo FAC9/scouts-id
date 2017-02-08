@@ -1,7 +1,9 @@
-const { homeRoute } = require('./handlers/home.js');
-const { staticRoute } = require('./handlers/static.js');
+const { homeRoute } = require('./routes/home.js');
+const { staticRoute } = require('./routes/static.js');
+const { confirmationRoute } = require('./routes/confirmation.js');
 
 const routes = [
+  confirmationRoute,
   homeRoute,
   staticRoute
 ];
