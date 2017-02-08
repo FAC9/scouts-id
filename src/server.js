@@ -7,11 +7,20 @@ const routes = require('./routes.js'); // Import our modularised routes
 
 const server = new Hapi.Server();
 
+var fs = require('fs');
+
+var tls = {
+  key: fs.readFileSync('./keys/key.pem'),
+  cert: fs.readFileSync('./keys/cert.pem')
+};
+
+
 server.connection({
   port: process.env.PORT || 8000,
   // Gets our Port, or defaults to locahost in development
   host: process.env.IP || '0.0.0.0',
   // Gets our IP, or defaults to 0 in development
+  tls: tls,
   routes: {
     files: {
       relativeTo: Path.join(__dirname, '../public')
@@ -25,4 +34,4 @@ server.register([Inert], (err) => { // We register extra modules like inert here
   server.route(routes); // Plug the routes we imported earlier into the server
 });
 
-module.exports = server; 
+module.exports = server;
