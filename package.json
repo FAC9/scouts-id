@@ -1,0 +1,40 @@
+{
+  "name": "hapi-boilerpalte",
+  "version": "1.0.0",
+  "description": "a basic hapi server",
+  "main": "index.js",
+  "dependencies": {
+    "handlebars": "^4.0.6",
+    "hapi": "^15.2.0",
+    "inert": "^4.0.2",
+    "joi": "^10.0.1",
+    "vision": "^4.1.0"
+  },
+  "engines": {
+    "node": "6.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.10.2",
+    "eslint-config-semistandard": "^7.0.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.7.1",
+    "eslint-plugin-standard": "^2.0.1",
+    "supertest": "^2.0.1",
+    "tape": "^4.6.3"
+  },
+  "scripts": {
+    "test": "node test/index.test.js",
+    "start": "node src/starter.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jwhiles/hapi-boilerpalte.git"
+  },
+  "author": "John Whiles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jwhiles/hapi-boilerpalte/issues"
+  },
+  "homepage": "https://github.com/Jwhiles/hapi-boilerpalte#readme"
+}
