@@ -27,14 +27,8 @@ const confirmationHandler = (request, reply) => {
   promise.then((activityDetails) => {
     const userId = activityDetails.getUserId();
     const profile = activityDetails.getUserProfile();
-    if (users[userId].status === true) {
-      reply.view('success');
-    } else {
-      reply(`
-        <h1>not a good scout</h1>
-        <img src=${profile.selfie}></img>
-        `);
-    }
+    const { selfie, givenNames, familyName } = profile;
+    reply.view('result', { confirmed: users[userId].status, selfie, givenNames, familyName });
   });
 };
 

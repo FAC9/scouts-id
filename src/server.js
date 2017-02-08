@@ -36,7 +36,8 @@ server.register([Inert, Vision], (err) => { // We register extra modules like in
       html: require('handlebars')
     },
     relativeTo: __dirname,
-    path: '../views'
+    path: '../views',
+    partialsPath: '../views/partials'
   });
   server.route(routes); // Plug the routes we imported earlier into the server
 });
