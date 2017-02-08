@@ -2,7 +2,7 @@
 const Hapi = require('hapi'); // The server is built on Hapi
 const Inert = require('inert'); // Inert allows us to server static files
 const Path = require('path'); // Path is used for easily constructing file paths
-
+const Vision = require('vision');
 const routes = require('./routes.js'); // Import our modularised routes
 
 const server = new Hapi.Server();
@@ -28,8 +28,16 @@ server.connection({
   }
 });
 
-server.register([Inert], (err) => { // We register extra modules like inert here
+server.register([Inert, Vision], (err) => { // We register extra modules like inert here
   if (err) { throw err; }
+
+  server.views({
+    engines: {
+      html: require('handlebars')
+    },
+    relativeTo: __dirname,
+    path: '../views'
+  });
   server.route(routes); // Plug the routes we imported earlier into the server
 });
 

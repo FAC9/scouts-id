@@ -8,7 +8,7 @@
     "hapi": "^15.2.0",
     "inert": "^4.0.2",
     "joi": "^10.0.1",
-    "vision": "^4.1.0",
+    "vision": "^4.1.1",
     "yoti-node-sdk": "^1.0.2"
   },
   "engines": {

@@ -28,10 +28,7 @@ const confirmationHandler = (request, reply) => {
     const userId = activityDetails.getUserId();
     const profile = activityDetails.getUserProfile();
     if (users[userId].status === true) {
-      reply(`
-        <h1>a good scout</h1>
-        <img src=${profile.selfie}></img>
-        `);
+      reply.view('success');
     } else {
       reply(`
         <h1>not a good scout</h1>
