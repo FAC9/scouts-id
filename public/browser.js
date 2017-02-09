@@ -31,20 +31,8 @@ function listenForToken (proto, url) {
     var data = JSON.parse(msg.data);
     switch (data.status) {
       case 'COMPLETED' : {
-        console.log(data);
         window.location = 'confirmation?token=' + data.token;
       }
     }
   };
 }
-// 
-//
-// function checkScout (token) {
-//   var xhr = new XMLHttpRequest();
-//   xhr.addEventListener('load', function (e) {
-//     qrcode.style.display = 'none';
-//     result.style.display = 'block';
-//   });
-//   xhr.open('GET', 'confirmation?token=' + token);
-//   xhr.send();
-// }

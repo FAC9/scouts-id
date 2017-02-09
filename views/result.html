@@ -14,16 +14,19 @@
       <img class="h4-ns db h3 center w100 fr-ns" src="images/logo_scouts.png"></img>
 
     <h1 class="tc i white ib fl-ns pa2 f1-ns  f5">Are you a good scout?</h1>
+  </div class="tc bg--red">
+    <div>
+      {{#if allowed}}
+      <h2 class="tc green f2-ns  f5">{{result}}!</h2>
+      <p class="tc green f1-ns f4">{{givenNames}} {{familyName}}</p>
+
+      {{else}}
+      <h2 class="tc red f2-ns  f5">{{result}}!</h2>
+      <p class="tc red f1-ns f4">{{givenNames}} {{familyName}}</p>
+
+      {{/if}}
+      <img class="db center" src="{{selfie}}"></img>
+      <a class="tc f1-ns f4" href="/">Check someone else.</a>
     </div>
-
-    {{#if confirmed}}
-    {{> success}}
-    {{else}}
-    {{> failure}}
-    {{/if}}
-
-
-    <p class="tc">{{givenNames}} {{familyName}}</p>
-    <img class="db  center " src="{{selfie}}"></img>
   </body>
 </html>
