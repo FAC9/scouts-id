@@ -28,6 +28,7 @@ const confirmationHandler = (request, reply) => {
     const userId = activityDetails.getUserId();
     const profile = activityDetails.getUserProfile();
     const { selfie, givenNames, familyName } = profile;
+    console.log(selfie);
     reply.view('result', { confirmed: users[userId].status, selfie, givenNames, familyName });
   });
 };
