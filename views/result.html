@@ -9,6 +9,7 @@
     <title>Scout membership validation</title>
   </head>
   <body class="">
+
     <div style="background-color:#451C6A" class="mt4 mca ph5 pv2 cf">
       <img class="h4-ns db h3 center w100 fr-ns" src="images/logo_scouts.png"></img>
 
@@ -20,7 +21,9 @@
     {{else}}
     {{> failure}}
     {{/if}}
-    <p>{{givenNames}} {{familyName}}</p>
-    <img src='{{selfie}}'>
+
+
+    <p class="tc">{{givenNames}} {{familyName}}</p>
+    <img class="db  center " src="{{selfie}}"></img>
   </body>
 </html>
