@@ -1,7 +1,7 @@
 # Scout ID
 Verification app for members of the scout association. 
 
-Our prototype can be found [here](https://scout-id.herokuapp.com/). 
+A prototype can be found [here](https://scout-id.herokuapp.com/). 
 
 ## Team
 [Tom Lillywhite](https://github.com/tomlillywhite) - Product Owner <br>
@@ -12,7 +12,7 @@ Our prototype can be found [here](https://scout-id.herokuapp.com/).
 At the latest count, the Scout Association has 89,995 members, this includes leaders, supporters, managers and administrators.
 When these members take part in activities relating to the scouts association they need to prove that they are indeed a member of the Scouts Association and that their membership is still valid (hasn't been revoked, or suspended).
 
-Currently the Scout Association provides their members with membership cards, these are not digital and revoking membership involves taking the card back from the member. This is comes with many problems and is very inefficient and costly. The Scout ID app replaces this outdated method of member validation. 
+Currently the Scout Association provides their members with membership cards, these are not digital and revoking membership involves taking the card back from the member. This is comes with many problems and is very inefficient and costly. The Scout ID app replaces this outdated method of member validation and Scout leaders will know instantly if a member is permitted to attend an event. 
 
 The current method of checking scout association membership does not provide the Scout Association with data about which members took part in events, this data has to be captured by other staff members which is vulnerable to human error and is time consuming. The Scout ID app will provide this information to the Scout Association. 
 
