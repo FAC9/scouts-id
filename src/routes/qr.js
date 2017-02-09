@@ -11,7 +11,11 @@ module.exports = {
       // Get proto
       const proto = body.match(/proto_.*=/)[0];
       // Make SVG
-      const svg = new QRCode({content: url, color: 'green'}).svg();
+      const svg = new QRCode({
+        content: url,
+        color: 'white',
+        background: '#432668'
+      }).svg();
       // Give to client
       reply(JSON.stringify({svg, proto, url}));
     });

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,25 +9,31 @@
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css"/>
     <title>Scout membership validation</title>
   </head>
-  <body class="">
-
-    <div style="background-color:#451C6A" class="mt4 mca ph5 pv2 cf">
-      <img class="h4-ns db h3 center w100 fr-ns" src="images/logo_scouts.png"></img>
-
-    <h1 class="tc i white ib fl-ns pa2 f1-ns  f5">Are you a good scout?</h1>
-  </div class="tc bg--red">
-    <div>
-      {{#if allowed}}
-      <h2 class="tc green f2-ns  f5">{{result}}!</h2>
-      <p class="tc green f1-ns f4">{{givenNames}} {{familyName}}</p>
-
-      {{else}}
-      <h2 class="tc red f2-ns  f5">{{result}}!</h2>
-      <p class="tc red f1-ns f4">{{givenNames}} {{familyName}}</p>
-
-      {{/if}}
-      <img class="db center" src="{{selfie}}"></img>
-      <a class="tc f1-ns f4" href="/">Check someone else.</a>
+  <body>
+    <div class="mt4 mca ph4 pv2 cf">
+      <img class="h4-ns db h3 center w100 fr-ns pr3" src="images/logo_scouts.jpg">
+      <h1 class="goodScout tc ib fl-ns pa2 f1-ns  f5">Scout ID</h1>
     </div>
+    <div class="image-container">
+      <div class="background-image">
+
+        <div class="pt2">
+          {{#if allowed}}
+          <h2 class="tc white f2-ns  f5">{{result}}!</h2>
+          <p class="tc white f1-ns f4">{{givenNames}} {{familyName}}</p>
+
+          {{else}}
+          <h2 class="tc red f2-ns  f5">{{result}}!</h2>
+          <p class="tc red f1-ns f4">{{givenNames}} {{familyName}}</p>
+
+          {{/if}}
+          <img class="db center" src="{{selfie}}"></img>
+          <a class="tc f1-ns f4" href="/">Check someone else.</a>
+        </div>
+
+          </div>
+        </div>
+      </div>
+
   </body>
 </html>
