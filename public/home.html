@@ -5,7 +5,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <script src="https://sdk.yoti.com/clients/browser.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css"/>
     <title>Scout membership validation</title>
   </head>
@@ -17,23 +16,12 @@
     <div class="image-container">
       <div class="background-image">
           <div class="tc pv6">
-            <span class="mv5" data-target='embed'
-            data-yoti-type="inline"
-            data-yoti-scenario-id="7aa7dd7f-c73c-4384-8af7-14906d71a5f2"
-            data-size="large"
-            >Sign up with Yoti</span>
+            <span class="get-qr-button ba pa2 bw2 br2 bg-green white b--black">Click to get QR Code...</span>
+            <span class="qr-code-output tc"></span>
           </div>
         </div>
       </div>
-      <script>
-  	    _ybg.config.service = 'https://code.yoti.com/app/'
-  	    _ybg.init()
-  	  </script>
+      <script src="browser.js"></script>
+
   </body>
 </html>
-
-<!--
-  yoti aplication id doesn't do anything.
-  yoti's script appears to just make a get request to https://www.yoti.com/qr/7aa7dd7f-c73c-4384-8af7-14906d71a5f2
-  this is a constatnt url based on our scenario ID.
--->
