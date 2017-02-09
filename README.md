@@ -14,7 +14,7 @@ Our prototype can be found [here](#).
 
 ## What? 
 
-## Next Steps
+## Next steps
  
 ## Stretch goal
 
