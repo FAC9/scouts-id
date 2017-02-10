@@ -14,7 +14,9 @@ module.exports = {
       const svg = new QRCode({
         content: url,
         color: 'white',
-        background: '#432668'
+        background: '#432668',
+        width: 300,
+        height: 300
       }).svg();
       // Give to client
       reply(JSON.stringify({svg, proto, url}));
