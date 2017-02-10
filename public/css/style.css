@@ -1,3 +1,6 @@
+body {
+  font-family: 'theSerif'
+}
 
 #canvas {
   margin-top: 20%;
@@ -22,4 +25,9 @@
 
 .goodScout {
   color: #572D91;
+}
+
+@font-face {
+  font-family: 'theSerif';
+  src: url('../fonts/theserif.otf');
 }
