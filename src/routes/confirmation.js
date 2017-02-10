@@ -31,7 +31,7 @@ const confirmationHandler = (request, reply) => {
     const profile = activityDetails.getUserProfile();
     const { selfie, givenNames, familyName } = profile;
     const result = userId in  users ? users[userId].status : 'not registered';
-    const allowed = users[userId].allowed || false
+    const allowed = userId in users ? users[userId].allowed : false
     reply.view('result', { result, selfie, givenNames, familyName, allowed });
   });
 };

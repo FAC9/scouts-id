@@ -16,7 +16,8 @@ module.exports = {
         color: 'white',
         background: '#432668',
         width: 300,
-        height: 300
+        height: 300,
+        padding: 4
       }).svg();
       // Give to client
       reply(JSON.stringify({svg, proto, url}));
