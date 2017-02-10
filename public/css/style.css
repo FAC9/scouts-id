@@ -7,7 +7,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: -10px;
+  margin-right: -10px;
   height: 100vh;
+}
+
+.logo {
+  height: 6em;
+}
+
+.sub-header {
+  color: #E87D03;
 }
 
 .goodScout {
