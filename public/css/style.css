@@ -1,25 +1,21 @@
 
-#canvas {
-  margin-top: 20%;
-  height: 260px;
-  width: 260px;
-}
-
-#yoti-logo {
-  display: none;
-}
-
 .background-image {
   background-image: url(../images/scouts-background2.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: -10px;
   height: 100vh;
-}
-
-.image-container {
-  margin-top: 25px;
 }
 
 .goodScout {
   color: #572D91;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: white
 }
